@@ -1,0 +1,21 @@
+parameters:
+    # This parameter defines the codes of the locales (languages) enabled in the application
+    app_locales: ru
+
+framework:
+    secret:          "fjsdjklfhklsdhfjkdfkasdfjkdfjksdgfgd"
+    router:
+        resource: "%kernel.root_dir%/config/routing_dev.yml"
+        strict_requirements: true
+    profiler: { only_exceptions: false }
+    php_errors:
+        log: true
+
+web_profiler:
+    toolbar: true
+    intercept_redirects: false
+
+
+twig:
+    debug:            "%kernel.debug%"
+    strict_variables: "%kernel.debug%"

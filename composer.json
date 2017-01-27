@@ -1,0 +1,33 @@
+{
+    "name": "muraveiko/Symfony-Profiler",
+    "description": "add Profiler to you project",
+    "keywords": [
+        "Profiler",
+        "Composer",
+        "installer"
+    ],
+    "authors": [
+        {
+            "name": "Muraveiko",
+            "email": "oleg@muraveyko.ru"
+        }
+    ],
+
+    "require-dev": {
+        "symfony/web-profiler-bundle": "^3.2",
+        "symfony/debug-bundle": "^3.2",
+        "symfony/dependency-injection": "^3.2",
+        "symfony/config": "^3.2",
+        "symfony/filesystem": "^3.2",
+        "symfony/yaml": "^3.2",
+        "symfony/class-loader": "^3.2",
+        "symfony/framework-bundle": "^3.2",
+        "symfony/security-bundle": "^3.2",
+        "symfony/twig-bundle": "^3.2"
+    },
+   "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}

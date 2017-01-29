@@ -7,7 +7,7 @@ use Symfony\Component\Debug\Debug;
 use Composer\Autoload\ClassLoader;
 
 /** @var ClassLoader $loader */
-$loader = require __DIR__.'/../vendor/autoload.php';
+$loader = require dirname(dirname(dirname(dirname(__FILE__)))).'/autoload.php';
 
 Debug::enable();
 

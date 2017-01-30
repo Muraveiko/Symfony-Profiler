@@ -10,3 +10,12 @@ _errors:
     resource: "@TwigBundle/Resources/config/routing/errors.xml"
     prefix:   /_error
 
+diafan:
+    path: /{_any}
+    defaults: { _controller: MyDiafan::getout }
+    requirements:
+      _any: .+?
+
+diafanroot:
+    path: /
+    defaults: { _controller: MyDiafan::getout }
